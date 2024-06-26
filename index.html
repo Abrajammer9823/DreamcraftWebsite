@@ -3,58 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dreamcraft Inc.</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>DreamCraft Inc.</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <a href="#" class="logo">Dreamcraft Inc.</a>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
+    <header>
+        <nav>
+            <img src="images/logo.png" alt="DreamCraft Inc. Logo" class="logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="hero">
-            <h1>Crafting Your Dreams into Reality</h1>
-            <p>San Diego's Premier Design-Build Firm</p>
-            <a href="#" class="cta-button">Get a Free Consultation</a>
-        </div>
     </header>
-    <section class="services">
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to DreamCraft Inc.</h1>
+            <p>Your vision, our craft.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>DreamCraft Inc. is dedicated to making your dreams a reality through innovative solutions and expert craftsmanship.</p>
+    </section>
+
+    <section id="services" class="services-section">
         <h2>Our Services</h2>
-        <div class="service-cards">
-            <div class="card">
-                <h3>Whole Home Remodeling</h3>
-                <p>Transform your entire home with our expert remodeling services.</p>
+        <div class="services">
+            <div class="service">
+                <h3>Custom Designs</h3>
+                <p>We offer bespoke design solutions tailored to your needs.</p>
             </div>
-            <div class="card">
-                <h3>Landscape Design</h3>
-                <p>Create stunning outdoor spaces with our innovative designs.</p>
+            <div class="service">
+                <h3>Consulting</h3>
+                <p>Our experts are here to guide you every step of the way.</p>
             </div>
-            <div class="card">
-                <h3>Interior Design</h3>
-                <p>Bring your interior visions to life with our professional designers.</p>
+            <div class="service">
+                <h3>Implementation</h3>
+                <p>We ensure that your project is executed to the highest standards.</p>
             </div>
         </div>
     </section>
-    <section class="video">
-        <h2>Check Out Our Work</h2>
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/UzOWb2CGlhk" frameborder="0" allowfullscreen></iframe>
-        </div>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
     </section>
-    <footer class="footer">
-        <p>&copy; 2024 Dreamcraft Inc. All rights reserved.</p>
-        <div class="social-media">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">Houzz</a>
-        </div>
+
+    <footer>
+        <p>&copy; 2024 DreamCraft Inc. All rights reserved.</p>
     </footer>
-    <script src="js/scripts.js"></script>
 </body>
 </html>
